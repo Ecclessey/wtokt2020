@@ -1,31 +1,27 @@
 <html>
 
-	<style>
-		textarea{
-			background-color : yellow;
-		}
+  <script>
+    function herewego(){
+      var elem = document.getElementsByTagName("html");
+      console.log(elem);
+      console.log("in here we go");
+      optellen(0); //argument
+    }
 
-		body{
-			background-color : black;
-			color : white;
-			padding-left : 10%;
-		}
+    function optellen(nummer){ //parameter
+      var getal1 = nummer + 1;
+      console.log(getal1);
+      document.getElementById("uitkomst").innerHTML = document.getElementById("invoerveld").value + ' ' + getal1;
+      document.getElementById("invoerveld").style.backgroundColor='orange';//DOM
+    }
 
-	</style>
 
-	<script>
+  </script>
 
-	</script>
+<input type=text id=invoerveld placeholder="Vul hier je naam in" autocomplete="off">
+<br>
+<input type=button onclick=herewego() value="klikhier">
+<br>
+<div id=uitkomst>uitkomst</div>
 
-	<head>
-		<title>wtokt2020</title>
-	</head>
-
-	<body>
-		<p>Hoi, <b>klas.</b><br></p>
-
-		<textarea cols="20" rows="5"> temp </textarea>
-
-	</body>
 </html>
-		
