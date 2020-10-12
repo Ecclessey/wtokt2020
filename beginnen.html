@@ -12,17 +12,15 @@
       var getal1 = document.getElementById('getal1').value;
       var getal2 = document.getElementById('getal2').value;
       console.log(typeof getal1);
-      document.getElementById("uitkomst").innerHTML = document.getElementById("invoerveld").value + ' je antwoord is ' + (getal1 * getal2);
-      document.getElementById("invoerveld").style.backgroundColor='orange';//DOM
+      document.getElementById("uitkomst").innerHTML = document.getElementById("invoerveld").value + ' je antwoord is ' + (getal1 * getal2) + '.';
     }
-
 
   </script>
 
 <input type=text id=getal1 placeholder="Getal 1" autocomplete="off"> * 
-<input type=text id=getal2 placeholder="Getal 2" autocomplete="off"><br>
+<input type=text id=getal2 placeholder="Getal 2" autocomplete="off"><br><br>
 
-<input type=text id=invoerveld placeholder="Vul hier je naam in" autocomplete="off">
+<input type=text id=invoerveld placeholder="Vul hier je naam in" autocomplete="off"><br>
 <br>
 <input type=button onclick=herewego() value="klikhier">
 <br>
