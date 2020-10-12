@@ -5,18 +5,22 @@
       var elem = document.getElementsByTagName("html");
       console.log(elem);
       console.log("in here we go");
-      optellen(0); //argument
+      optellen(); 
     }
 
-    function optellen(nummer){ //parameter
-      var getal1 = nummer + 1;
-      console.log(getal1);
-      document.getElementById("uitkomst").innerHTML = document.getElementById("invoerveld").value + ' ' + getal1;
+    function optellen(){ 
+      var getal1 = document.getElementById('getal1').value;
+      var getal2 = document.getElementById('getal2').value;
+      console.log(typeof getal1);
+      document.getElementById("uitkomst").innerHTML = document.getElementById("invoerveld").value + ' je antwoord is ' + (getal1 * getal2);
       document.getElementById("invoerveld").style.backgroundColor='orange';//DOM
     }
 
 
   </script>
+
+<input type=text id=getal1 placeholder="Getal 1" autocomplete="off"> * 
+<input type=text id=getal2 placeholder="Getal 2" autocomplete="off"><br>
 
 <input type=text id=invoerveld placeholder="Vul hier je naam in" autocomplete="off">
 <br>
